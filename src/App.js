@@ -39,14 +39,11 @@ function App() {
       </div>
       <div className='container'>
         <form onSubmit={finalSearch}>
-          <input className='search' placeholder='Search...' onChange={myRecipeSearch} value={mySearch}>
-          </input>
-        </form>
-      </div>
-      <div  className='container'>
+          <input className='search' placeholder='Search...' onChange={myRecipeSearch} value={mySearch}/>
           <button>
-            <img src='https://img.icons8.com/fluency/48/000000/fry.png' className='icon' />
+            <img src='https://img.icons8.com/fluency/48/000000/fry.png' className='icon'/>
           </button>
+        </form>
       </div>
   <div>
       {myRecipes.map(element => (
